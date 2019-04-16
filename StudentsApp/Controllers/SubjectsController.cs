@@ -144,6 +144,11 @@ namespace StudentsApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> RegisterStudent()
+        {
+            return RedirectToAction("Create","RegiterSubjects");
+        }
+
         private bool SubjectExists(int id)
         {
             return _context.Subject.Any(e => e.Id == id);
