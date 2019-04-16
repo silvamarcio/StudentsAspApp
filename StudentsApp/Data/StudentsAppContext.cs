@@ -19,5 +19,7 @@ namespace StudentsApp.Models
         public DbSet<StudentsApp.Models.Teacher> Teacher { get; set; }
 
         public DbSet<StudentsApp.Models.Student> Student { get; set; }
+
+        public DbSet<StudentsApp.Models.RegiterSubject> RegiterSubject { get; set; }
     }
 }
